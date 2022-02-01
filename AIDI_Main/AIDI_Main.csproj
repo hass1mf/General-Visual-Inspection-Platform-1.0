@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71F0A3FB-339F-4D02-8F46-AB15DFCC7899}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AIDI_Main</RootNamespace>
+    <AssemblyName>AIDI_Main</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AidiCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AidiCore.dll</HintPath>
+    </Reference>
+    <Reference Include="AqPanelDoubleBuffered">
+      <HintPath>F:\AQRoseProjectData\AQRoseProjectData\AidiModule\VisionDesign\AqPanelDoubleBuffered.dll</HintPath>
+    </Reference>
+    <Reference Include="AqVision.Controls">
+      <HintPath>F:\AQRoseProjectData\AQRoseProjectData\AidiModule\VisionDesign\AqVision.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AqVision.Graphic">
+      <HintPath>F:\AQRoseProjectData\AQRoseProjectData\AidiModule\VisionDesign\AqVision.Graphic.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\AQRoseProjectData\VisionMotionPro\VisionAndMotionPro V0.0.0.3\Start\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>F:\AQRoseProjectData\VisionMotionPro\VisionAndMotionPro V0.0.0.3\Start\bin\Debug\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>F:\AQRoseProjectData\VisionMotionPro\VisionAndMotionPro V0.0.0.3\Start\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AqModuleTab.cs" />
+    <Compile Include="AqBlinkTreeNodeRenderer.cs" />
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Disp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>Frm_Disp.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConfirmBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConfirmBox.Designer.cs">
+      <DependentUpon>Frm_ConfirmBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Job.Designer.cs">
+      <DependentUpon>Frm_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Message.Designer.cs">
+      <DependentUpon>Frm_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tools.designer.cs">
+      <DependentUpon>Frm_Tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AqToolInfo.cs" />
+    <Compile Include="AqToolIO.cs" />
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Disp.resx">
+      <DependentUpon>Frm_Disp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConfirmBox.resx">
+      <DependentUpon>Frm_ConfirmBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Job.resx">
+      <DependentUpon>Frm_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Message.resx">
+      <DependentUpon>Frm_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Tools.resx">
+      <DependentUpon>Frm_Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2DUncodeTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AngleLLTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSwitchClock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Axis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Axis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarCodeTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarCodeTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlobAnalyseTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlobAnalyseTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouncingball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodeEditTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodeEditTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorToRGBTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorTransGrayTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CoorTransTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistanceLLTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistanceLLTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistancePLTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistancePLTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DistancePPTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownCameraAlignTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownCameraAlignTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drag %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drag %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeHandCalibrationTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindCircleTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindLineTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindLineTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FitCircleTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FitLineTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixtureTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GrayMatchTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageAcquistionTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageAcquistionTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Job.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JobProperity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JobSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyBoard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabelTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabelTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogicTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loo[.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotDray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OCRTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OCRTool1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Outport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Output.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutputTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointToLineTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductDebugSwitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReadImge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Region.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunJob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunLoop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunOnce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveImageTo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveTo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveTo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SerialPort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShapeMatchTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShapeMatchTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\String %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\String.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubImageTool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubImageTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swtich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teach.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tool.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnknownTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpCameraRobotAlignTool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowLight.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
