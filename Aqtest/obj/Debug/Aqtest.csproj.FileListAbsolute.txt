@@ -1,0 +1,14 @@
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\AIDI\bin\Debug\Modules\Aqtest.dll
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\AIDI\bin\Debug\Modules\Aqtest.pdb
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\Aqtest\obj\Debug\Aqtest.csproj.CoreCompileInputs.cache
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\Aqtest\obj\Debug\Aqtest.csproj.CopyComplete
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\Aqtest\obj\Debug\Aqtest.dll
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\Aqtest\obj\Debug\Aqtest.pdb
+E:\AQRoseProjectData\AIDI培训\AIDIdemo\AIDI\Aqtest\obj\Debug\Aqtest.csprojAssemblyReference.cache
+F:\AIDI\AIDI\bin\Debug\Modules\Aqtest.dll
+F:\AIDI\AIDI\bin\Debug\Modules\Aqtest.pdb
+F:\AIDI\Aqtest\obj\Debug\Aqtest.csproj.CopyComplete
+F:\AIDI\Aqtest\obj\Debug\Aqtest.dll
+F:\AIDI\Aqtest\obj\Debug\Aqtest.pdb
+C:\Users\aq\source\repos\AIDI_Main\AIDI_Main\bin\Debug\Modules\Aqtest.dll
+C:\Users\aq\source\repos\AIDI_Main\AIDI_Main\bin\Debug\Modules\Aqtest.pdb
