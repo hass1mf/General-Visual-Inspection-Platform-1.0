@@ -35,6 +35,10 @@
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/3.png)
 
 
+打开我们的图像采集工具（或则相机模块），导入图片：
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/4.png)
+
+
 
 点开工具栏，能看到我们软件遍历了我module路径下的dll，并且把dll里面的方法和功能都加载出来
 代码基本不会再维护，看不懂的朋友可以先掌握IOC的设计思想，再找找插件模式相关的东西了解下，有问题加我微信13751948461！
