@@ -18,5 +18,12 @@
 本项目解决的是如何把功能模块和框架独立出来，所以软件交互设计并没有花太多形式，数据流的格式模仿了康耐视的Visionpro的方式（事实证明，这种方式可能是因为早期.net早期的语言特性导致的部分功能无法实现，才用了这种交互，主要是因为使得整个交互界面非常乱，而且卡顿现象也很严重包括vp自己的软件也会有这种情况，增加了运维成本也增加工控机的负担，说明有些东西存在的很久并不是一定是最优的，再后面的版本换了另外一种交互模式），整体的用户界面是找的网上devops的工业风设计，直接套过来用（UI不在本次软件设计中考虑）。
 
 本项目主要是想提供一个思路为各位朋友提供另外一种编程思路，后续我会把整个运行环境打包，已经软件使用说明完善发出来。
-![Alt text](https://github.com/weiman152/StarsView/blob/master/ScreenShots/1.png)
+
+主界面
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/1.png)
+
+软件根目录以及我们编译的存放Dll路径：
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/6.png)
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/7.png)
+
 代码基本不会再维护，看不懂的朋友可以先掌握IOC的设计思想，再找找插件模式相关的东西了解下，有问题加我微信13751948461！
