@@ -24,6 +24,22 @@
 
 软件根目录以及我们编译的存放Dll路径，通过注入DLL的方式拓展我们的功能模块其他详见代码：
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/6.png)
-![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/7.png)
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/8.png)
 
+
+工具栏拖拽出我们需要的模块：
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/2.png)
+
+
+仿造的VisionPro的数据链路的交互模式：
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/3.png)
+
+
+打开我们的图像采集工具（或则相机模块），导入图片：
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/4.png)
+
+打开深度学习模块，把模型导入（深度学习是阿丘科技明星产品AIDI）：
+![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/5.png)
+
+点开工具栏，能看到我们软件遍历了我module路径下的dll，并且把dll里面的方法和功能都加载出来
 代码基本不会再维护，看不懂的朋友可以先掌握IOC的设计思想，再找找插件模式相关的东西了解下，有问题加我微信13751948461！
