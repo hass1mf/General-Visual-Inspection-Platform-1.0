@@ -38,7 +38,7 @@
 打开我们的图像采集工具（或则相机模块），导入图片：
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/4.png)
 
-打开深度学习模块，把模型导入：
+打开深度学习模块，把模型导入（深度学习是阿丘科技明星产品AIDI）：
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/5.png)
 
 点开工具栏，能看到我们软件遍历了我module路径下的dll，并且把dll里面的方法和功能都加载出来
