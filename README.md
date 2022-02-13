@@ -19,7 +19,7 @@
 
 本项目主要是想提供一个思路为各位朋友提供另外一种编程思路，后续我会把整个运行环境打包，已经软件使用说明完善发出来。
 
-主界面
+主界面:
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/1.png)
 
 
