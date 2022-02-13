@@ -22,6 +22,7 @@
 主界面
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/1.png)
 
+
 软件根目录以及我们编译的存放Dll路径，通过注入DLL的方式拓展我们的功能模块其他详见代码：
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/6.png)
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/8.png)
