@@ -46,5 +46,14 @@
 这个就是最终软件运行的效果：
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/9.png)
 
+
+因为有很多AIDI的dll库，导致整个软件有点大，所以上传百度网盘，有兴趣的可以下载玩一下：
+
+--来自百度网盘超级会员V5的分享
+hi，这是我用百度网盘分享的内容~复制这段内容打开「百度网盘」APP即可获取 
+链接:https://pan.baidu.com/s/1VjERv6jupvadKsV9h97ZQQ 
+提取码:2hw8
+
+
 点开工具栏，能看到我们软件遍历了我module路径下的dll，并且把dll里面的方法和功能都加载出来
 代码基本不会再维护，看不懂的朋友可以先掌握IOC的设计思想，再找找插件模式相关的东西了解下，有问题加我微信13751948461！
