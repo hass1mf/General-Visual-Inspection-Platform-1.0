@@ -47,7 +47,7 @@
 ![Alt text](https://github.com/hass1mf/General-Visual-Inspection-Platform-1.0/blob/main/image/9.png)
 
 
-因为有很多AIDI的dll库，导致整个软件有点大，所以上传百度网盘，有兴趣的可以下载玩一下：
+因为有很多AIDI的库已经软件用到的第三方类库，代码直接无法编译需要配置环境，需要的类库，上传百度网盘，有需要自取：
 
 --来自百度网盘超级会员V5的分享
 hi，这是我用百度网盘分享的内容~复制这段内容打开「百度网盘」APP即可获取 
